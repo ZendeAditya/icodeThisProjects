@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- Change code below this line -->
+  <body class="bg-[#181028] flex justify-center items-center min-h-screen">
+    <section class="w-[30rem] h-[29rem] bg-white rounded-md shadow-md">
+      <div class="flex items-center justify-end p-3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-x cursor-pointer"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M18 6l-12 12" />
+          <path d="M6 6l12 12" />
+        </svg>
+      </div>
+      <div>
+        <h2 class="text-center text-3xl py-2 px-2">Gift the joy of choice</h2>
+        <p class="text-center text-sm p-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+          aperiam earum temporibus eaque maxime unde
+        </p>
+      </div>
+      <div class="flex items-center justify-center gap-3">
+        <svg
+          id="minus"
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-minus cursor-pointer"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M5 12l14 0" />
+        </svg>
+        <div
+          id="price"
+          class="border-2 p-3 rounded-md border-gray-500 text-3xl"
+        >
+          $25
+        </div>
+        <svg
+          id="plus"
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-plus cursor-pointer"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 5l0 14" />
+          <path d="M5 12l14 0" />
+        </svg>
+      </div>
+      <div
+        class="flex items-center justify-evenly flex-wrap p-4 [&_button]:py-2 [&_button]:px-10 [&_button]:rounded-md [&_button]:border-gray-400 [&_button]:border-2 [&_button]:m-3 hover:[&_button]:shadow-lg"
+      >
+        <button>$25</button>
+        <button>$50</button>
+        <button>$75</button>
+        <button>$100</button>
+        <button>$200</button>
+        <button>$300</button>
+      </div>
+      <div class="flex items-center justify-center">
+        <div class="py-2 px-8 rounded-md bg-blue-300 cursor-pointer">
+          Add to cart
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+  <!-- Change code above this line -->
+</html>
