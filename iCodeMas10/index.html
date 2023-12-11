@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- Change code below this line -->
+  <body class="bg-[#181028] flex justify-center items-center min-h-screen">
+    <main>
+      <section class="w-[30rem] h-[28rem] rounded-md bg-white shadow-lg">
+          <div class="flex items-center justify-end p-4 cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24"
+                  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
+              </svg>
+          </div>
+          <div>
+              <h2 class="text-center p-2 font-semibold text-2xl">We value your feedback!</h2>
+              <p class="text-sm font-thin  px-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, at esse vel voluptates aspernatur eos illum.</p>
+          </div>
+          <div id="emojis"></div>
+          <div>
+              <label for="feedbackForm" class="text-start font-semibold p-2 block">Share your feedback</label>
+              <textarea name="feedback" id="feedbackForm" cols="60" rows="3" class="m-2 outline-none rounded-md border-2" placeholder="Message..."></textarea>
+              <button class="py-2 px-10 rounded-full m-3 bg-blue-400 text-white">Send Feedback</button>
+          </div>
+      </section>
+     </main>
+    <script src="main.js"></script>
+  </body>
+  <!-- Change code above this line -->
+</html>
