@@ -1,5 +1,62 @@
-<body class="bg-gray-200 flex justify-center items-center min-h-screen">
-  <h2 class="italic text-3xl p-5 font-semibold">
-    Tomorrow is last exam so i will submit this challenge after this exam.
-  </h2>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<!-- Change code below this line -->
+<body class="bg-[#181028] flex justify-center items-center min-h-screen">
+    <div id="assBox" class="bg-white text-[#181028]  space-y-4 shadow-lg rounded-xl w-80 text-sm duration-300 ease-in">
+       <div class="bg-purple-400 p-2 rounded-md">
+        <h2 class="text-center p-2 text-3xl">Virtual Assistant!</h2>
+        <p class="p-2 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt temporibus, sunt labore quod
+            consectetur optio.</p>
+       </div>
+       <div class="h-80 relative m-2">
+        <div class="flex gap-2 items-center text-sm">
+            <img src="https://images.unsplash.com/photo-1603793303277-ed67787545e5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2FudGElMjBjbGF1c3xlbnwwfHwwfHx8MA%3D%3D" alt="" class="w-10 h-10 object-cover rounded-full m-2">
+           <div>
+            <p class="py-1 px-4 rounded-md  object-contain bg-gray-200">Hi Therer, my Child!</p>
+            <p class="py-1 px-4 rounded-md  object-contain bg-gray-200 m-2">What can I help you with?</p>
+            <div id="time" class="text-xs p-0">time here</div>
+           </div>
+        </div>
+        <div class="flex gap-2 items-center justify-end p-2 text-sm">
+            <div>
+                <p class="py-1 px-4 rounded-md  object-contain bg-gray-200">Hi Santa!</p>
+                <p class="py-1 px-4 rounded-md  object-contain bg-gray-200 m-2">I'd like to know when you'll brign my gift?</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHx8MA%3D%3D" alt="" class="w-10 h-10 object-cover rounded-full m-2">
+        </div>
+
+        <div class="">
+        <input type="text" class="absolute bottom-0 border-2 border-gray-600 py-2 w-72 px-2 rounded-md m-3 outline-none focus:outline-1">
+        <svg id="sendMsg" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send absolute bottom-0 m-5 right-0 cursor-pointer" width="24" height="24"
+            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 14l11 -11" />
+            <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" />
+        </svg>
+        </div>
+       </div>   
+    </div>
+    <div id="toggleBox" class="absolute bottom-0 m-4 right-7">
+        <svg xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-caret-down bg-white m-2 rounded-full w-10 h-10 cursor-pointer " width="24"
+            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M6 10l6 6l6 -6h-12" />
+        </svg>
+    </div>
+    <script src="main.js"></script>
 </body>
+<!-- Change code above this line -->
+
+</html>
