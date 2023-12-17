@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <!-- Change code below this line -->
+  <body class="bg-[#181028] flex justify-center items-center min-h-screen">
+    <div
+      class="bg-white text-[#181028] p-4 space-y-4 shadow-lg rounded-xl max-w-md md:max-w-lg"
+    >
+      <div>
+        <input
+          type="text"
+          name="textName"
+          id="productSearch"
+          class="rounded-md py-2 w-80 px-2 border-2 border-black"
+        />
+      </div>
+      <div>
+        <div id="productPage" class="h-96 overflow-auto"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+  <!-- Change code above this line -->
+</html>
