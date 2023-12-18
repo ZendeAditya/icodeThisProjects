@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <!-- Change code below this line -->
+  <body class="m-2">
+    <main>
+      <section class="flex items-center justify-between p-2">
+        <div>
+          <button class="py-2 px-10 rounded-full gap-2 bg-slate-500">
+            Fiters Off
+          </button>
+          <button class="py-2 px-10 rounded-full gap-2 bg-slate-500">
+            Most recent
+          </button>
+        </div>
+        <div
+          class="flex items-center justify-between p-2 gap-2 [&_svg]:cursor-pointer"
+        >
+          <svg
+            id="bars"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-menu hover:bg-gray-500 rounded-full duration-300"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 8l16 0" />
+            <path d="M4 16l16 0" />
+          </svg>
+          <svg
+            id="box"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-layout-grid hover:bg-gray-500 rounded-full duration-300"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+            />
+            <path
+              d="M14 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+            />
+            <path
+              d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+            />
+            <path
+              d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+            />
+          </svg>
+        </div>
+      </section>
+      <section id="productPage" class=""></section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+  <!-- Change code above this line -->
+</html>
