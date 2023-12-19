@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <!-- Change code below this line -->
+  <body class="bg-blue-300 flex justify-center items-center min-h-screen">
+    <main
+      id="style-2"
+      class="w-96 h-[35rem] bg-blue-100 rounded-md border-2 border-gray-300 overflow-auto shadow-lg"
+    >
+      <section class="p-4 m-3">
+        <div
+          class="[&_input]:py-2 [&_input]:border-2 [&_input]:border-gray-400 [&_input]:outline-none [&_input]:rounded-md [&_input]:w-80 [&_div]:flex [&_div]:flex-col [&_div]:items-start [&_div]:gap-2"
+        >
+          <h2 class="font-bold text-lg">Contact Info</h2>
+          <div class="flex flex-col">
+            <label for="emailId">Email</label>
+            <input type="email" id="emailId" placeholder="email here" />
+          </div>
+          <div>
+            <h2 class="font-bold text-lg py-2">Shipping Info</h2>
+            <div>
+              <label for="NameId">Name</label>
+              <input type="text" id="NameId" placeholder="Enter Name" />
+            </div>
+            <div>
+              <label for="RegionId">Country/Region</label>
+              <input type="text" id="RegionId" placeholder="Enter Country" />
+            </div>
+            <div>
+              <label for="AddressId">Address</label>
+              <input type="text" id="AddressId" placeholder="Enter Address" />
+            </div>
+            <div>
+              <h2 class="text-lg font-bold">Payment Info</h2>
+              <section
+                class="flex items-center justify-between flex-wrap gap-2 [&_div]:border-2 [&_div]:py-2 [&_div]:px-10 [&_div]:cursor-pointer [&_div]:rounded"
+              >
+                <div><h2>Card</h2></div>
+                <div><h2>Cash at arrival</h2></div>
+                <div><h2>Paypal</h2></div>
+              </section>
+            </div>
+            <div>
+              <label for="cardId">Card Number</label>
+              <input type="text" placeholder="0044 1234 5678 9012" />
+            </div>
+            <div>
+              <div>
+                <label for="dateId">Expiry Date</label>
+                <input
+                  type="text"
+                  name="named"
+                  id="dateId"
+                  placeholder="MM/YY"
+                />
+              </div>
+              <div>
+                <label for="cvcId">CVC</label>
+                <input type="text" name="named" id="cvcId" placeholder="123" />
+              </div>
+            </div>
+            <div
+              id="btn"
+              class="py-2 px-10 rounded-full bg-green-400 text-white hover:shadow-md hover:shadow-gray-500 duration-300 ease-in"
+            >
+              <button>Place order</button>
+            </div>
+          </div>
+        </div>
+        <div
+          id="modal"
+          class="absolute w-80 bg-white h-20 rounded-md top-10 shadow-md px-2 cursor-pointer -translate-y-80 duration-500 ease-in"
+        >
+          <h2
+            class="text-center py-5 text-xl font-serif font-semibold italic px-2"
+          >
+            Thank You for placing order!🥳🎉
+          </h2>
+        </div>
+      </section>
+    </main>
+    <script src="/main.js"></script>
+  </body>
+  <!-- Change code above this line -->
+</html>
