@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <!-- Change code below this line -->
+  <body class="bg-[#fff] flex justify-center items-center min-h-screen">
+    <section class="flex items-start justify-between">
+      <div class="w-0 md:w-52 p-2 px-5 [&_div>h1]:py-3">
+        <div class="flex items-center justify-between gap-2">
+          <h2 class="text-3xl font-semibold pt-4">Filters</h2>
+          <button id="filterBtn" class="text-xs md:hidden cursor-pointer px-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-adjustments-filled"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 3a1 1 0 0 1 .993 .883l.007 .117v3.171a3.001 3.001 0 0 1 0 5.658v7.171a1 1 0 0 1 -1.993 .117l-.007 -.117v-7.17a3.002 3.002 0 0 1 -1.995 -2.654l-.005 -.176l.005 -.176a3.002 3.002 0 0 1 1.995 -2.654v-3.17a1 1 0 0 1 1 -1z"
+                stroke-width="0"
+                fill="currentColor"
+              />
+              <path
+                d="M12 3a1 1 0 0 1 .993 .883l.007 .117v9.171a3.001 3.001 0 0 1 0 5.658v1.171a1 1 0 0 1 -1.993 .117l-.007 -.117v-1.17a3.002 3.002 0 0 1 -1.995 -2.654l-.005 -.176l.005 -.176a3.002 3.002 0 0 1 1.995 -2.654v-9.17a1 1 0 0 1 1 -1z"
+                stroke-width="0"
+                fill="currentColor"
+              />
+              <path
+                d="M18 3a1 1 0 0 1 .993 .883l.007 .117v.171a3.001 3.001 0 0 1 0 5.658v10.171a1 1 0 0 1 -1.993 .117l-.007 -.117v-10.17a3.002 3.002 0 0 1 -1.995 -2.654l-.005 -.176l.005 -.176a3.002 3.002 0 0 1 1.995 -2.654v-.17a1 1 0 0 1 1 -1z"
+                stroke-width="0"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          id="filterBox"
+          class="absolute md:block w-96 bg-red-200 md:static md:bg-white rounded-md hidden"
+          id="filterCard"
+        >
+          <div id="cat">
+            <h1 id="catBtn" class="cursor-pointer font-semibold">Category</h1>
+            <ul
+              id="catUl"
+              class="flex items-start justify-between gap-2 flex-col [&_label]:cursor-pointer [&_li]:inline-block px-3 duration-300 ease-in"
+            >
+              <li>
+                <input type="checkbox" name="cookiesBox" id="cookiesBox" />
+                <label for="cookiesBox">Cookies</label>
+              </li>
+              <li>
+                <input type="checkbox" name="candiesbox" id="candiesbox" />
+                <label for="candiesbox">Candies</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Ornamentsbox" id="Ornamentsbox" />
+                <label for="Ornamentsbox">Ornaments</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="accessoriesbox"
+                  id="accessoriesbox"
+                />
+                <label for="accessoriesbox">Accessories</label>
+              </li>
+            </ul>
+          </div>
+          <div id="colors">
+            <h1 id="colorsBtn" class="font-semibold cursor-pointer">Colors</h1>
+            <ul
+              id="colorsUl"
+              class="flex items-start justify-between gap-2 flex-col [&_label]:cursor-pointer [&_li]:inline-block px-3 duration-300 ease-in"
+            >
+              <li>
+                <input type="checkbox" name="redbox" id="redbox" />
+                <label for="redbox">Red</label>
+              </li>
+              <li>
+                <input type="checkbox" name="whitebox" id="whitebox" />
+                <label for="whitebox">White</label>
+              </li>
+              <li>
+                <input type="checkbox" name="greenbox" id="greenbox" />
+                <label for="greenbox">Green</label>
+              </li>
+              <li>
+                <input type="checkbox" name="brownbox" id="brownbox" />
+                <label for="brownbox">Brown</label>
+              </li>
+            </ul>
+          </div>
+          <div id="size">
+            <h1 id="sizeBtn" class="cursor-pointer font-semibold">Size</h1>
+            <ul
+              id="sizeUl"
+              class="flex items-start justify-between gap-2 flex-col [&_label]:cursor-pointer [&_li]:inline-block px-3 duration-300 ease-in"
+            >
+              <li>
+                <input type="checkbox" name="smallbox" id="smallbox" />
+                <label for="smallbox">Small</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mediumbox" id="mediumbox" />
+                <label for="mediumbox">Medius</label>
+              </li>
+              <li>
+                <input type="checkbox" name="largebox" id="largebox" />
+                <label for="largebox">Large</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        id="productSection"
+        class="p-5 duration-300 ease-in w-[33rem] lg:w-full h-full"
+      ></div>
+    </section>
+    <script src="/main.js"></script>
+  </body>
+  <!-- Change code above this line -->
+</html>
