@@ -1,0 +1,159 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <!-- Change code below this line -->
+  <body
+    class="bg-gradient-to-tr from-blue-300 to-pink-300 flex justify-center items-center min-h-screen"
+  >
+    <main>
+      <section
+        class="w-72 h-[30rem] bg-white shadow-lg rounded-md overflow-hidden"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1504473178671-6809ddc42af6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aW5zdGFncmFtJTIwcHJvZmlsZXxlbnwwfDB8MHx8fDA%3D"
+          alt=""
+          class="absolute h-52 w-96 -m-9 rounded-lg hover:shadow-lg"
+        />
+        <div class="pt-44 flex items-center justify-end p-3">
+          <svg
+            id="btn"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-menu cursor-pointer"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 8l16 0" />
+            <path d="M4 16l16 0" />
+          </svg>
+        </div>
+        <div class="text-center relative">
+          <h2 class="text-2xl font-semibold">Aditya Zende</h2>
+          <p>Frontend Developer</p>
+          <ul
+            class="flex items-center justify-center flex-col [&_li]:flex [&_li]:items-center [&_li]:justify-between [&_li]:gap-3 [&_li]:p-3 [&_li]:cursor-pointer"
+          >
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-facebook"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                />
+                <p>Facebook</p>
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-instagram"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+                />
+                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path d="M16.5 7.5l0 .01" />
+                <p>Instagram</p>
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-x"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+              </svg>
+              <p>Twitter</p>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-linkedin"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+                />
+                <path d="M8 11l0 5" />
+                <path d="M8 8l0 .01" />
+                <path d="M12 16l0 -5" />
+                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                <p>LinkedIn</p>
+              </svg>
+            </li>
+          </ul>
+
+          <ul
+            id="navItems"
+            class="top-1 h-full w-full bg-blue-100 absolute translate-x-72 duration-500 ease-in flex items-center justify-center flex-col [&_li]:flex [&_li]:items-center [&_li]:justify-between [&_li]:gap-2 [&_li]:p-3 [&_li]:cursor-pointer font-semibold"
+          >
+            <li>View profile</li>
+            <li>Direct Message</li>
+            <li>view files</li>
+            <li>Calls</li>
+          </ul>
+        </div>
+        <div class="flex items-center justify-end mx-20">
+          <a href="https://twitter.com/adidev_23">
+            <button
+              class="py-3 px-10 rounded-md absolute bg-gradient-to-tr from-blue-500 text-white font-semibold to-pink-300"
+            >
+              Follow
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+    <script src="/main.js"></script>
+  </body>
+  <!-- Change code above this line -->
+</html>
