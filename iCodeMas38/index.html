@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- Change code below this line -->
+  <body
+    class="bg-[#fff] bg-gradient-to-br from-emerald-100 to-blue-200 flex justify-center items-center min-h-screen"
+  >
+    <main>
+      <div
+        class="w-80 m-2 p-3 text-sm font-semibold h-20 rounded-md bg-blue-300 flex relative"
+      >
+        <h2>
+          Our new
+          <a href="#" class="underline font-semibold">Terms of services</a> and
+          <a href="#" class="underline font-semibold"
+            >Privacy statement are in effect.</a
+          >
+        </h2>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-x absolute text-end right-0 m-2 top-1 bg-pink-400 rounded-full cursor-pointer"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M18 6l-12 12" />
+          <path d="M6 6l12 12" />
+        </svg>
+      </div>
+      <section
+        class="w-80 h-[30rem] rounded-lg hover:shadow-lg duration-200 ease-in transition cursor-pointer bg-white overflow-auto"
+      >
+        <div class="fixed bg-blue-100 rounded-md">
+          <div class="flex items-center justify-between gap-2 m-2 p-2">
+            <h2 class="text-lg font-semibold">Documents</h2>
+            <button
+              class="py-1 px-6 rounded-full text-blue-500 border-blue-500 border-2"
+            >
+              + Add New
+            </button>
+          </div>
+          <div>
+            <input
+              type="search"
+              name="search"
+              id="searchId"
+              class="border-2 py-2 w-[17.8rem] px-2 m-2 rounded-md outline-none"
+              placeholder="Search Documents"
+            />
+          </div>
+        </div>
+        <div id="documentList" class="pt-32"></div>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+  <!-- Change code above this line -->
+</html>
