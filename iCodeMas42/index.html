@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<!-- Change code below this line -->
+<body class="bg-[#fff]">
+   <main>
+        <nav class="flex items-center justify-between px-2 m-2">
+            <section>
+                <ul class="flex items-center justify-between gap-4 [&_li]:cursor-pointer">
+                    <li>Home</li>
+                    <li>Project</li>
+                    <li class="after:content-[''] after:absolute after:w-2 after:h-2 after:rounded-full after:bg-red-600 after:animate-ping">Inbox</li>
+                    <li>Team</li>
+                </ul>
+            </section>
+            <section class="flex gap-2 items-center">
+                <button class="border-2 py-2 px-7 rounded-md">Upgrade</button>
+                <div class="bg-indigo-400 py-2 px-3 font-semibold rounded-full">JG</div>
+            </section>
+        </nav>
+        <section class="flex p-2">
+            <aside class="bg-[#242531] w-60 p-2 rounded-lg h-[90.5vh] text-white m-2 text-sm flex items-center justify-between flex-col">
+                <ul class="flex flex-col gap-2 m-3 py-2 [&_li]:cursor-pointer relative">
+                <h2 class="uppercase font-medium p-3">Projects</h2>
+                    <li
+                        class="realtive before:content-[''] before:absolute before:w-2 before:h-2 before:rounded-full before:bg-red-600 before:p-1 before:-ps-2 before:m-2 before:-ms-3 text-sm">
+                        Boardme <br> development</li>
+                    <li
+                        class="realtive before:content-[''] before:absolute before:w-2 before:h-2 before:rounded-full before:bg-yellow-800 before:p-1 before:-ps-2 before:m-2 before:-ms-3">
+                        Feature lists</li>
+                    <li
+                        class="realtive before:content-[''] before:absolute before:w-2 before:h-2 before:rounded-full before:bg-pink-600 before:p-1 before:-ps-2 before:m-2 before:-ms-3">
+                        Marketing</li>
+                    <li
+                        class="realtive before:content-[''] before:absolute before:w-2 before:h-2 before:rounded-full before:bg-red-600 before:p-1 before:-ps-2 before:m-2 before:-ms-3">
+                        UIDD development</li>
+                    <li
+                        class="realtive before:content-[''] before:absolute before:w-2 before:h-2 before:rounded-full before:bg-amber-600 before:p-1 before:-ps-2 before:m-2 before:-ms-3">
+                        Topics</li>
+                    <li
+                        class="realtive before:content-[''] before:absolute before:w-2 before:h-2 before:rounded-full before:bg-green-600 before:p-1 before:-ps-2 before:m-2 before:-ms-3">
+                        Bugs and fixes</li>
+                    <li class="underline text-blue-500">View all ></li>
+                </ul>
+                <div>
+                    <h2 class="uppercase font-medium ">Teams</h2>
+                    <div class="bg-[#3A3C53] w-52 h-52 p-2 rounded-lg ">
+                        <h4 class="font-bold text-xl p-1">Need to form a team?</h4>
+                        <p class="p-2">Try our 30 days trial and see what you can achive together.</p>
+                        <button class="py-2 px-10 rounded-md bg-white text-black">Try it free</button>
+                    </div>
+                </div>
+            </aside>
+            <section>
+                <h2 class="font-semibold text-lg py-3">Projects</h2>
+                <div class="flex items-center justify-between gap-4 flex-wrap [&_div]:cursor-pointer">
+                    <div>
+                        <div class="w-24 h-24 bg-blue-400 rounded-md shadow-lg shadow-blue-300 text-5xl text-center py-5">
+                            M
+                        </div>
+                        <p class="ps-3 p-2">Marketing</p>
+                    </div>
+                    <div>
+                        <div class="w-24 h-24 bg-orange-400 rounded-md shadow-lg shadow-orange-300 text-5xl text-center py-5">
+                            FI
+                        </div>
+                        <p class="ps-3 p-2">Feature List</p>
+                    </div>
+                    <div>
+                        <div class="w-24 h-24 bg-yellow-400 rounded-md shadow-lg shadow-yellow-300 text-5xl text-center py-5">
+                            bd
+                        </div>
+                        <p class="ps-3 p-2">Boardme development</p>
+                    </div>
+                    <div>
+                        <div class="w-24 h-24 bg-indigo-400 rounded-md shadow-lg shadow-indigo-300 text-5xl text-center py-5">
+                            M
+                        </div>
+                        <p class="ps-3 p-2">UIDD development</p>
+                    </div>
+                    <div>
+                        <div class="w-24 h-24 bg-white rounded-md shadow-lg shadow-white text-5xl text-center py-5 border-2">
+                            +
+                        </div>
+                        <p class="ps-3 p-2">add a project</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+   </main>
+</body>
+<!-- Change code above this line -->
+
+</html>
