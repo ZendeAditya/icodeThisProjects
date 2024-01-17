@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <!-- Change code below this line -->
+  <body class="bg-[#DDF1F0] flex justify-center items-center min-h-screen">
+    <main>
+      <section class="bg-white w-96 h-96 rounded-lg shadow-xl shadow-[#B0E5E7]">
+        <div
+          class="flex items-center justify-end gap-5 relative mx-8 [&_span]:cursor-pointer"
+        >
+          <span
+            class="relative after:content-[''] after:absolute after:w-3 after:h-3 after:rounded-md after:bg-red-500 after:m-2"
+          ></span>
+          <span
+            class="relative after:content-[''] after:absolute after:w-3 after:h-3 after:rounded-md after:bg-yellow-500 after:m-2"
+          ></span>
+          <span
+            class="relative after:content-[''] after:absolute after:w-3 after:h-3 after:rounded-md after:bg-green-500 after:m-2"
+          ></span>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center relative min-h-[55vh] text-2xl"
+        >
+          <h2>Recording</h2>
+          <div>
+            <span>00:</span>
+            <span>05:</span>
+            <span>24</span>
+          </div>
+          <div class="flex items-center justify-between gap-5">
+            <div class="text-green-600 flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 5.25v13.5m-7.5-13.5v13.5"
+                />
+              </svg>
+              <p>Pause</p>
+            </div>
+            <div class="text-red-600 flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5.25 7.5A2.25 2.25 0 0 1 7.5 5.25h9a2.25 2.25 0 0 1 2.25 2.25v9a2.25 2.25 0 0 1-2.25 2.25h-9a2.25 2.25 0 0 1-2.25-2.25v-9Z"
+                />
+              </svg>
+              <p>stop</p>
+            </div>
+          </div>
+        </div>
+        <footer
+          class="relative bg-gray-400/40 h-7 my-1 rounded-md w-full"
+        ></footer>
+      </section>
+    </main>
+  </body>
+  <!-- Change code above this line -->
+</html>
