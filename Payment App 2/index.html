@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <!-- Change code below this line -->
+  <body class="bg-[#fff] flex justify-center items-center min-h-screen">
+    <main
+      class="w-[25rem] h-[30rem] bg-white border-2 border-gray-400 shadow-xl rounded-3xl"
+    >
+      <section class="p-5">
+        <h2 class="text-4xl font-semibold text-blue-500">Payment</h2>
+
+        <div class="py-2">
+          <input type="radio" name="card" id="RadioCard" class="w-3 h-4" />
+          <label for="RadioCard" class="font-semibold text-lg">Card</label>
+        </div>
+        <p class="px-4">Pay with a card</p>
+        <div>
+          <input
+            type="number"
+            name="cardNumber"
+            id="cardId"
+            placeholder="Card number"
+            class="py-2 w-72 border-2 outline-none px-2 rounded-lg m-2"
+          />
+          <input
+            type="number"
+            name="cardNumber"
+            id="cardId"
+            placeholder="mm/dd "
+            class="py-2 w-72 border-2 outline-none px-2 rounded-lg m-2"
+          />
+          <input
+            type="number"
+            name="cardNumber"
+            id="cardId"
+            placeholder="cvc"
+            class="py-2 w-72 border-2 outline-none px-2 rounded-lg m-2"
+          />
+        </div>
+      </section>
+      <section class="p-5">
+        <div>
+          <input type="radio" name="card" id="payLeter" class="w-3 h-4" />
+          <label for="payLeter" class="font-semibold text-lg"
+            >Get first. Pay later.</label
+          >
+        </div>
+        <p class="px-4">Pay within 30 days</p>
+      </section>
+      <section>
+        <button class="py-3 w-96 text-white m-2 rounded-md bg-blue-700">
+          Continue
+        </button>
+      </section>
+    </main>
+  </body>
+  <!-- Change code above this line -->
+</html>
